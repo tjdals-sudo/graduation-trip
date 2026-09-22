@@ -6,14 +6,14 @@
 <title>6학년 졸업여행 신청 · 온누리교회 소년부</title>
 <style>
   :root{
-    --ink:#1B2A4A;
-    --indigo:#2D4373;
-    --gold:#B8883A;
-    --paper:#FBF9F5;
-    --card:#FFFFFF;
-    --line:#E4DED2;
-    --muted:#6B6B63;
-    --alert:#A83A31;
+    --ink:#3B2416;
+    --indigo:#A14A1E;
+    --gold:#D89A2B;
+    --paper:#FBF5EB;
+    --card:#FFFCF7;
+    --line:#E7DCC9;
+    --muted:#7C6B55;
+    --alert:#9E3223;
     box-sizing:border-box;
     padding-top:env(safe-area-inset-top,0px);
     padding-bottom:env(safe-area-inset-bottom,0px);
@@ -42,14 +42,14 @@
   .band .church{
     font-size:13px;
     letter-spacing:.04em;
-    color:#A9B6D0;
+    color:#DCBE90;
     margin:0 0 6px;
   }
   .band h1{
     font-size:18px;
     font-weight:500;
     margin:0 0 20px;
-    color:#DDE4F0;
+    color:#F2E3CD;
   }
   .band .theme{
     font-size:32px;
@@ -101,10 +101,16 @@
     color:var(--alert);
     margin-top:3px;
   }
+  dl.info .subline{
+    display:block;
+    font-size:13px;
+    color:var(--muted);
+    margin-top:2px;
+  }
   .open-note{
     margin:16px 0 0;
     padding:11px 13px;
-    background:#F2F4F9;
+    background:#F7EEDF;
     border-left:3px solid var(--indigo);
     font-size:14px;
     color:var(--indigo);
@@ -130,12 +136,12 @@
     font:inherit;
     font-size:16px;
     padding:12px 13px;
-    background:#fff;
+    background:var(--card);
     border:1px solid var(--line);
     border-radius:4px;
     color:var(--ink);
   }
-  input::placeholder{color:#B5B0A6}
+  input::placeholder{color:#BCA98C}
   input:focus-visible,
   input[type=radio]:focus-visible+span,
   input[type=checkbox]:focus-visible+span,
@@ -174,7 +180,7 @@
     padding:12px 4px;
     border:1px solid var(--line);
     border-radius:4px;
-    background:#fff;
+    background:var(--card);
     font-size:14.5px;
     white-space:nowrap;
   }
@@ -189,7 +195,7 @@
   details.privacy{
     border:1px solid var(--line);
     border-radius:4px;
-    background:#fff;
+    background:var(--card);
     margin-bottom:12px;
   }
   details.privacy summary{
@@ -211,7 +217,7 @@
   .privacy-body{
     padding:0 14px 14px;
     font-size:14px;
-    color:#4A4A44;
+    color:#544335;
     border-top:1px solid var(--line);
     padding-top:12px;
   }
@@ -250,7 +256,7 @@
     cursor:pointer;
   }
   .submit:disabled{
-    background:#C6C2B8;
+    background:#CFC0A9;
     cursor:not-allowed;
   }
   .hint{
@@ -263,8 +269,8 @@
     display:none;
     margin-top:14px;
     padding:12px 14px;
-    background:#FBEEED;
-    border:1px solid #E8C9C6;
+    background:#FBECE4;
+    border:1px solid #E9CDBC;
     border-radius:4px;
     font-size:14px;
     color:var(--alert);
@@ -295,7 +301,7 @@
   .warn-note{
     margin:16px 0 0;
     padding:11px 13px;
-    background:#FBEEED;
+    background:#FBECE4;
     border-left:3px solid var(--alert);
     font-size:14px;
     color:var(--alert);
@@ -320,12 +326,13 @@
   <section class="card" aria-labelledby="info-h">
     <h2 id="info-h">안내</h2>
     <dl class="info">
-      <div><dt>일시</dt><dd>11월 7일 (토) 09:00 교회 출발 · 19:00 교회 도착 (예정)</dd></div>
+      <div><dt>일시</dt><dd>11월 7일 (토) 09:00 교회 출발 · 18:00 교회 도착 (예정)</dd></div>
       <div><dt>장소</dt><dd>서울랜드 (경기 과천시)</dd></div>
       <div><dt>대상</dt><dd>소년 1·2부 6학년 및 교사<span class="note">5학년과 새친구는 참석할 수 없습니다</span></dd></div>
       <div><dt>이동</dt><dd>버스 대절 (여행자 보험 가입 예정)</dd></div>
       <div><dt>일정</dt><dd>조별로 놀이기구 이용 및 식사 (조별 담당 교사 동행)</dd></div>
-      <div><dt>회비</dt><dd>학생 25,000원 · 교사 10,000원</dd></div>
+      <div><dt>회비</dt><dd>학생 25,000원</dd></div>
+      <div><dt>계좌</dt><dd>카카오뱅크 3333-33-1564836<span class="subline">예금주 강주희</span></dd></div>
     </dl>
     <p class="open-note">여행자 보험 가입을 위해 주민등록번호를 받습니다. 보험 가입 용도로만 사용하고 가입 완료 후 즉시 파기합니다.</p>
   </section>
@@ -426,7 +433,7 @@
 /* ────────────────────────────────────────────
    Google Apps Script 웹앱 주소 (졸업여행 전용으로 따로 배포)
    ──────────────────────────────────────────── */
-const SUBMIT_URL = "https://script.google.com/macros/s/AKfycbx9Xj3LbvtK90cKbteU3SGY-fSolLLso8Um6ZyujYkT2xjnGCbnSsGtPYzxKxDfFAq7/exec";
+const SUBMIT_URL = "여기에_졸업여행_APPS_SCRIPT_웹앱_URL_입력";
 
 const $ = id => document.getElementById(id);
 
